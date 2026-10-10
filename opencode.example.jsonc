@@ -1,0 +1,11 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugins": [
+    {
+      "package": "file:///data/data/com.termux/files/home/storage/downloads/opencode-safestore",
+      "options": {
+        "url": "https://opencode-safestore.<your-subdomain>.workers.dev"
+      }
+    }
+  ]
+}

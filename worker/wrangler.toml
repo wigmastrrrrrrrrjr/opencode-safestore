@@ -1,0 +1,25 @@
+name = "opencode-safestore"
+main = "src/index.ts"
+compatibility_date = "2025-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+# -- D1 binding ---------------------------------------------------------------
+# Create the database once, then paste the printed database_id here:
+#   bunx wrangler d1 create opencode-safestore
+[[d1_databases]]
+binding = "DB"
+database_name = "opencode-safestore"
+database_id = "a4211499-22fa-4342-bd71-93a5f1e73e9f"
+
+# -- Auth secret (never commit the value) -------------------------------------
+#   bunx wrangler secret put SAFESTORE_TOKEN
+# Generate a strong token:  openssl rand -base64 48
+
+[observability]
+enabled = true
+
+# -- Static asset modules (imported as text by src/index.ts) ------------------
+[[rules]]
+type = "Text"
+globs = ["**/*.html", "**/*.css", "**/*.js"]
+fallthrough = true

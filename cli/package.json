@@ -1,0 +1,8 @@
+{
+  "name": "safestore-cli",
+  "version": "0.1.0",
+  "description": "safestore CLI - log in to your account, install the cloud plugin, manage access",
+  "type": "module",
+  "bin": { "sf": "./src/index.js" },
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+curl -sSL https://raw.githubusercontent.com/csomeone301/opencode-safestore/main/cli/bin/install.sh | bash

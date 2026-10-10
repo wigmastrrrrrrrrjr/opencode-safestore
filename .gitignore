@@ -1,0 +1,13 @@
+# Build artefacts
+node_modules/
+dist/
+*.log
+
+# The generated master key is stored inside OpenCode's own plugin storage,
+# never here. Do not commit secrets if you paste them into config files.
+.env
+.env.*
+!.env.example
+
+# Worker bearer token generated at deploy time
+.safestore-token
